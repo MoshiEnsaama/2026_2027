@@ -1,4 +1,4 @@
 # Dnade 2
 
 ## A-Frame
-* [Labyrinthe] (./labyrinthe.html)
+* [Labyrinthe](./labyrinthe.html)
