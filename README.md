@@ -3,4 +3,4 @@
 ## Selene
 
 ### A-Frame
-* [Labyrinthe](./Labyrinthe_yang_selene/labyrinthe.html)
+* [Labyrinthe_ver.1](./Labyrinthe_yang_selene/labyrinthe.html)
