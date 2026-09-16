@@ -1,19 +1,21 @@
 <html>
+
   <head>
+
     <script src="https://aframe.io/releases/1.8.0/aframe.min.js">
-
     </script>
-
     <style>
     </style>
 
   </head>
 
-    <body>
+
+  <body>
 
       <a-scene>
 
         <a-assets>
+
           <!-- //texture -->
           <img id="stonewall" src="./assets/texture/stonewall.jpg!d">  
           <img id="sky" src="./assets/texture/sky.jpg">
@@ -26,9 +28,10 @@
           <a-mixin id="taille2" geometry="width: 2; height: 5; depth: 0.1"></a-mixin>
           <a-mixin id="taille3" geometry="width: 10; height: 5; depth: 0.1"></a-mixin>
 
-            <!-- //objet -->
+          <!-- //objet -->
           <a-asset-item id="skull" src="./assets/3Dmodels/exp3_obj_skull/12140_Skull_v3_L2.obj"></a-asset-item>
           <a-asset-item id="skull-mtl" src="./assets/3Dmodels/exp3_obj_skull/12140_Skull_v3_L2.mtl"></a-asset-item>
+
         </a-assets>
 
 
@@ -61,11 +64,14 @@
         <a-box mixin="mur taille1" position="1 2.5 -0.5" rotation="0 90 0"></a-box>
 
         <!-- //objet -->
-      <a-entity obj-model="obj: #skull; mtl: #skull-mtl" position="1.7 0.1 0.2" scale="0.01 0.01 0.01" rotation="270 310 0"> </a-entity>
+        <a-entity obj-model="obj: #skull; mtl: #skull-mtl" position="1.7 0.1 0.2" scale="0.01 0.01 0.01" rotation="270 310 0"> </a-entity>
 
-      <a-sky src="#sky"></a-sky>
+        <a-sky src="#sky"></a-sky>
         
-      <a-entity camera look-controls wasd-controls="acceleration:10" position="0 1.6 5" look-controls.enabled=true></a-entity>
+        <a-entity camera look-controls wasd-controls="acceleration:10" position="0 1.6 5" look-controls.enabled=true></a-entity>
+
       </a-scene>
-    </body>
+
+  </body>
+
 </html>
