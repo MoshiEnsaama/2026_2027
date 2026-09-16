@@ -14,7 +14,7 @@
       <a-scene>
 
         <a-assets>
-          //texture
+          <!-- //texture -->
           <img id="stonewall" src="./assets/texture/stonewall.jpg!d">  
 
           <a-mixin id="mur" material.side="both" material="src: #stonewall; repeat: 1 2"></a-mixin>
@@ -24,7 +24,7 @@
           <a-mixin id="taille2" geometry="width: 2; height: 5; depth: 0.1"></a-mixin>
           <a-mixin id="taille3" geometry="width: 10; height: 5; depth: 0.1"></a-mixin>
 
-            //objet
+            <!-- //objet -->
           <a-asset-item id="bush" src="./assets/3Dmodels/bush_model/scene.gltf"></a-asset-item>
           <a-asset-item id="skull" src="./assets/3Dmodels/exp3_obj_skull/12140_Skull_v3_L2.obj"></a-asset-item>
           <a-asset-item id="skull-mtl" src="./assets/3Dmodels/exp3_obj_skull/12140_Skull_v3_L2.mtl"></a-asset-item>
@@ -32,14 +32,14 @@
         </a-assets>
 
 
-        //sol
+        <!-- //sol -->
         <a-box position="0 0 0" rotation="0 0 0" color="#241911" width="50" height="0.1" depth="50" material.side="both" ></a-box>
 
-        //séparation entrée
+        <!-- //séparation entrée -->
         <a-box mixin="murext taille3" position="-7 2.5 2" rotation="0 0 0"></a-box>
         <a-box mixin="murext taille3" position="7 2.5 2" rotation="0 0 0"></a-box>
 
-        //tour
+        <!-- //tour -->
         <a-box mixin="mur taille2" position="-2 2.5 1" rotation="0 90 0"></a-box>
         <a-box mixin="mur taille1" position="-1.5 2.5 2" rotation="0 0 0"></a-box>
         <a-box mixin="mur taille1" position="-2 2.5 -1.5" rotation="0 90 0"></a-box>
@@ -48,7 +48,7 @@
         <a-box mixin="mur taille2" position="2 2.5 -1" rotation="0 90 0"></a-box>
         <a-box mixin="mur taille2" position="2 2.5 1" rotation="0 90 0"></a-box>
 
-        //intérieur
+        <!-- //intérieur -->
         <a-box mixin="mur taille1" position="-1.5 2.5 0" rotation="0 0 0"></a-box>
         <a-box mixin="mur taille1" position="-1 2.5 -0.5" rotation="0 90 0"></a-box>
         <a-box mixin="mur taille2" position="1 2.5 2" rotation="0 0 0"></a-box>
@@ -60,7 +60,7 @@
         <a-box mixin="mur taille1" position="-0.5 2.5 -1" rotation="0 0 0"></a-box>
         <a-box mixin="mur taille1" position="1 2.5 -0.5" rotation="0 90 0"></a-box>
 
-        //objet
+        <!-- //objet -->
       <a-entity gltf-model="#bush" position="1 0 4" scale="1.5 1.5 1.5" rotation="0 90 0"></a-entity>
       <a-entity obj-model="obj: #skull; mtl: #skull-mtl" position="1.7 0.1 0.2" scale="0.01 0.01 0.01" rotation="270 310 0"> </a-entity>
       <a-entity gltf-model="#vampire" position="-0.3 1 -0.5" scale="1 1 1" rotation="0 90 0" color="darkgrey"></a-entity>
